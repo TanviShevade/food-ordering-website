@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand text-warning fw-bold" href="index.html">
+            🍔 FoodHub
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<section class="bg-warning py-5 text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">
+            Our Delicious Menu
+        </h1>
+
+        <p class="lead">
+            Choose your favorite food and add it to cart
+        </p>
+    </div>
+</section>
+
+<!-- Food Cards -->
+<div class="container py-5">
+
+    <div class="row g-4">
+
+        <!-- Pizza -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+                     class="card-img-top"
+                     height="250">
+
+                <div class="card-body text-center">
+
+                    <h4>Cheese Pizza</h4>
+
+                    <p>
+                        Fresh cheese loaded pizza
+                    </p>
+
+                    <h5 class="text-success">
+                        ₹299
+                    </h5>
+
+                    <button
+                        class="btn btn-warning"
+                        onclick="addToCart('Cheese Pizza',299)">
+                        Add To Cart
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Burger -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+                     class="card-img-top"
+                     height="250">
+
+                <div class="card-body text-center">
+
+                    <h4>Cheese Burger</h4>
+
+                    <p>
+                        Crispy burger with cheese
+                    </p>
+
+                    <h5 class="text-success">
+                        ₹149
+                    </h5>
+
+                    <button
+                        class="btn btn-warning"
+                        onclick="addToCart('Cheese Burger',149)">
+                        Add To Cart
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Pasta -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9"
+                     class="card-img-top"
+                     height="250">
+
+                <div class="card-body text-center">
+
+                    <h4>Italian Pasta</h4>
+
+                    <p>
+                        Creamy white sauce pasta
+                    </p>
+
+                    <h5 class="text-success">
+                        ₹199
+                    </h5>
+
+                    <button
+                        class="btn btn-warning"
+                        onclick="addToCart('Italian Pasta',199)">
+                        Add To Cart
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fries -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+
+                <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f"
+                     class="card-img-top"
+                     height="250">
+
+                <div class="card-body text-center">
+
+                    <h4>French Fries</h4>
+
+                    <p>
+                        Crispy salted fries
+                    </p>
+
+                    <h5 class="text-success">
+                        ₹99
+                    </h5>
+
+                    <button
+                        class="btn btn-warning"
+                        onclick="addToCart('French Fries',99)">
+                        Add To Cart
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Sandwich -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af"
+                     class="card-img-top"
+                     height="250">
+
+                <div class="card-body text-center">
+
+                    <h4>Veg Sandwich</h4>
+
+                    <p>
+                        Healthy grilled sandwich
+                    </p>
+
+                    <h5 class="text-success">
+                        ₹129
+                    </h5>
+
+                    <button
+                        class="btn btn-warning"
+                        onclick="addToCart('Veg Sandwich',129)">
+                        Add To Cart
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Cold Coffee -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+                     class="card-img-top"
+                     height="250">
+
+                <div class="card-body text-center">
+
+                    <h4>Cold Coffee</h4>
+
+                    <p>
+                        Refreshing chilled coffee
+                    </p>
+
+                    <h5 class="text-success">
+                        ₹89
+                    </h5>
+
+                    <button
+                        class="btn btn-warning"
+                        onclick="addToCart('Cold Coffee',89)">
+                        Add To Cart
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>
+        © 2026 FoodHub | DevOps Mini Project
+    </p>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```

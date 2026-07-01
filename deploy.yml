@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Stop existing container
+      command: docker stop food-ordering-container
+      ignore_errors: yes
+
+    - name: Remove existing container
+      command: docker rm food-ordering-container
+      ignore_errors: yes
+
+    - name: Run new container
+      command: docker run -d --name food-ordering-container -p 8080:80 food-ordering-app
